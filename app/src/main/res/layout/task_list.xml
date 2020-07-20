@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="20dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="1dp"
+            android:textSize="20sp"
+            android:text="no:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_position"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@id/task_position"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:text="task_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_time"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@id/task_time"
+            android:layout_alignBottom="@id/task_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24hr"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_below="@id/task_position"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="task_name:"/>
+            <TextView
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/task_time"
+                android:id="@+id/task_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="task_name"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
